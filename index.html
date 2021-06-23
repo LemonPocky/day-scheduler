@@ -18,7 +18,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Link to custom CSS sheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -36,7 +37,7 @@
         in the finished product.) -->
 
       <!-- example of a past time block -->
-      <div id="hour-9" class="row time-block past">
+      <div id="hour-9" data-hour="9" class="row time-block">
         <div class="col-md-1 hour">9AM</div>
         <textarea class="col-md-10 description"> </textarea>
         <button class="btn saveBtn col-md-1">
@@ -45,7 +46,7 @@
       </div>
 
       <!-- example of a present time block -->
-      <div id="hour-10" class="row time-block present">
+      <div id="hour-10" data-hour="10" class="row time-block">
         <div class="col-md-1 hour">10AM</div>
         <textarea class="col-md-10 description"> </textarea>
         <button class="btn saveBtn col-md-1">
@@ -54,7 +55,7 @@
       </div>
 
       <!-- example of a future time block -->
-      <div id="hour-11" class="row time-block future">
+      <div id="hour-11" data-hour="11" class="row time-block">
         <div class="col-md-1 hour">11AM</div>
         <textarea class="col-md-10 description"> </textarea>
         <button class="btn saveBtn col-md-1">
@@ -62,42 +63,42 @@
         </button>
       </div>
 
-      <div id="hour-12" class="row time-block">
+      <div id="hour-12" data-hour="12" class="row time-block">
         <div class="col-md-1 hour">12PM</div>
         <textarea class="col-md-10 description"> </textarea>
         <button class="btn saveBtn col-md-1">
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <div id="hour-13" class="row time-block">
+      <div id="hour-13" data-hour="13" class="row time-block">
         <div class="col-md-1 hour">1PM</div>
         <textarea class="col-md-10 description"> </textarea>
         <button class="btn saveBtn col-md-1">
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <div id="hour-14" class="row time-block">
+      <div id="hour-14" data-hour="14" class="row time-block">
         <div class="col-md-1 hour">2PM</div>
         <textarea class="col-md-10 description"> </textarea>
         <button class="btn saveBtn col-md-1">
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <div id="hour-15" class="row time-block">
+      <div id="hour-15" data-hour="15" class="row time-block">
         <div class="col-md-1 hour">3PM</div>
         <textarea class="col-md-10 description"> </textarea>
         <button class="btn saveBtn col-md-1">
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <div id="hour-16" class="row time-block">
+      <div id="hour-16" data-hour="16" class="row time-block">
         <div class="col-md-1 hour">4PM</div>
         <textarea class="col-md-10 description"> </textarea>
         <button class="btn saveBtn col-md-1">
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <div id="hour-17" class="row time-block">
+      <div id="hour-17" data-hour="17" class="row time-block">
         <div class="col-md-1 hour">5PM</div>
         <textarea class="col-md-10 description"> </textarea>
         <button class="btn saveBtn col-md-1">
@@ -110,5 +111,6 @@
 
     <!-- link your javascript files here. (Must be after jquery is linked!
       You should be able to explain why that is to be "employer ready".) -->
+      <script src="assets/js/script.js"></script>
   </body>
 </html>
