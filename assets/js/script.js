@@ -86,7 +86,7 @@ function saveEvent() {
         schedule = initLocalStorage();
     }
 
-    schedule[thisHour - 9] = description;
+    schedule[thisHour - 9] = description.trim();
     localStorage.setItem('schedule', JSON.stringify(schedule));
 }
 
