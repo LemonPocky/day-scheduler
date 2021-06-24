@@ -14,8 +14,7 @@ function showTodaysDate() {
 
 // Colors boxes according to time by reassigning their class
 function colorBoxes() {
-    // const currentHour = moment().hour();
-    const currentHour = 12; // TODO: REMOVE
+    const currentHour = moment().hour();
 
     // Loop through .time-block divs
     const timeBlocks = $('.time-block');
