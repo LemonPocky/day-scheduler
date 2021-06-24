@@ -1,7 +1,14 @@
 function renderPage() {
+    showTodaysDate();
     colorBoxes();
 
     // Create click handler for save boxes that saves events in localStorage
+}
+
+// Display today's date at the top of the page
+function showTodaysDate() {
+    const currentDayEl = $('#currentDay');
+    currentDayEl.text(moment().format('dddd, MMMM Do YYYY'));
 }
 
 function colorBoxes() {
